@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonas Romeiro — Contato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">jonas<span>.dev</span></a>
+
+    <div class="topo-acoes">
+      <nav aria-label="Navegação principal">
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="contato.html" class="ativo">Contato</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+
+      <a href="https://github.com/Jonnasfr" target="_blank" rel="noopener noreferrer" class="botao-github">
+        GitHub ↗
+      </a>
+
+      <button class="botao-tema" aria-label="Alternar modo de cor">☀️</button>
+      <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container" style="max-width: 680px;">
+    <div class="secao-topo">
+      <div class="secao-identificador">
+        // contato
+      </div>
+      <div class="secao-linha-wrap">
+        <h2 class="secao-titulo">Vamos Conversar</h2>
+        <div class="heading-rule"></div>
+        <div class="quadrado-accent"></div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-bottom: 2rem;">Preencha os campos abaixo para enviar uma mensagem diretamente
+      para mim:</p>
+
+    <form class="formulario" id="form-contato" novalidate>
+      <div class="campo">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome (mínimo 3 letras)">
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+      </div>
+
+      <div class="campo">
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Descreva o assunto">
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5"
+          placeholder="Digite sua mensagem (mínimo 10 letras)"></textarea>
+      </div>
+
+      <button type="submit" class="botao botao-accent">Enviar Mensagem →</button>
+
+      <p class="aviso" id="aviso" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <h5>Jonas Romeiro · Desenvolvedor Back-end</h5>
+    <h6>Bootcamp4All — 2026</h6>
+    <p style="margin-top: 0.8rem; font-size: 0.85rem;">
+      <a href="https://github.com/Jonnasfr" target="_blank" rel="noopener noreferrer">github.com/Jonnasfr</a>
+    </p>
+    <a href="index.html" class="voltar-topo">← Voltar ao início</a>
+  </footer>
+
+  <script src="layout.js"></script>
+  <script src="contato.js"></script>
+</body>
+
+</html>

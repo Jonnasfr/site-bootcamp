@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonas Romeiro — Desenvolvedor back end</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">Jonass<span>.dev</span></a>
+
+    <div class="topo-acoes">
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+
+      <a href="https://github.com/Jonnasfr" target="_blank" rel="noopener noreferrer" class="botao-github"
+        title="Acessar perfil no GitHub">
+        GitHub ↗
+      </a>
+
+
+      <button class="botao-tema" aria-label="Alternar modo de cor">☀️</button>
+      <button class="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="inicio">
+      <div class="hero-texto">
+        <div class="hero-pre-titulo">
+          Oi , EU SOU
+        </div>
+
+        <h1 class="hero-nome">Jonas Romeiro</h1>
+
+        <h2 class="hero-cargo">
+          Desenvolvedor Back-end
+        </h2>
+
+        <p class="hero-bio">
+          Transformo ideias em interfaces funcionais, unindo código limpo, inteligência artificial e design moderno para
+          criar experiências intuitivas e acessíveis.
+        </p>
+
+        <div class="botoes-hero">
+          <a href="#contato" class="botao botao-accent">Entre em contato →</a>
+          <a href="#projetos" class="botao botao-outline">Ver projetos ↓</a>
+        </div>
+      </div>
+
+
+      <div class="hero-imagem">
+        <img src="img/jonas.webp" alt="Foto de perfil de Jonas Romeiro" class="foto">
+      </div>
+    </section>
+
+
+    <section class="container" id="sobre">
+      <div class="secao-topo">
+        <div class="secao-identificador">
+          𖤐 sobre-mim
+        </div>
+        <div class="secao-linha-wrap">
+          <h2 class="secao-titulo">Sobre Mim</h2>
+          <div class="heading-rule"></div>
+          <div class="quadrado-accent"></div>
+        </div>
+      </div>
+
+      <div style="max-width: 680px; font-size: 1.05rem; line-height: 1.85;">
+        <p>
+          Oi! Me chamo Jonas Romeiro, sou de Campo Mourão - PR e tenho como foco o em desenvolver sites e
+          funcionalidades para o dia a dia. No Bootcamp, aprofundei meus conhecimentos em html, JavaScript e Css.
+        </p>
+        <p>
+          Procuro construir uuma interface limpa, acessivel e com um bom desempenho, utilizando boas práticas e
+          arquiteturas bem estruturadas.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="container" id="skills">
+      <div class="secao-topo">
+        <div class="secao-identificador">
+          𖤐 tecnologias
+        </div>
+        <div class="secao-linha-wrap">
+          <h2 class="secao-titulo">Habilidades &amp; Ferramentas</h2>
+          <div class="heading-rule"></div>
+          <div class="quadrado-accent"></div>
+        </div>
+      </div>
+
+      <div class="colunas">
+        <div class="cartao">
+          <h3>Backend</h3>
+          <ul class="lista-skills">
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="cartao">
+          <h3>Ferramentas</h3>
+          <ul class="lista-skills">
+            <li>Figma</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container" id="projetos">
+      <div class="secao-topo">
+        <div class="secao-identificador">
+          𖤐 projetos
+        </div>
+        <div class="secao-linha-wrap">
+          <h2 class="secao-titulo">Projetos em Destaque</h2>
+          <div class="heading-rule"></div>
+          <div class="quadrado-accent"></div>
+        </div>
+      </div>
+
+      <p style="margin-bottom: 2rem;">Confira abaixo alguns dos projetos desenvolvidos:</p>
+
+      <div class="colunas" id="lista-projetos">
+
+      </div>
+    </section>
+
+
+    <section class="container" id="contato">
+      <div class="secao-topo">
+        <div class="secao-identificador">
+          𖤐 contato
+        </div>
+        <div class="secao-linha-wrap">
+          <h2 class="secao-titulo">Vamos Conversar?</h2>
+          <div class="heading-rule"></div>
+          <div class="quadrado-accent"></div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-bottom: 2rem;">Envie uma mensagem abaixo ou utilize a página dedicada de
+        contato:</p>
+
+
+      <form class="formulario" id="form-contato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome (mínimo 3 letras)">
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Descreva o assunto">
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4"
+            placeholder="Escreva sua mensagem com pelo menos 10 caracteres"></textarea>
+        </div>
+
+        <button type="submit" class="botao botao-accent">Enviar Mensagem →</button>
+
+        <p class="aviso" id="aviso" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <h5>Jonas Romeiro · Desenvolvedor Back-end &amp; IA</h5>
+    <h6>Bootcamp4All (Concurso de Bolsas) — 2026</h6>
+    <p style="margin-top: 0.8rem; font-size: 0.85rem;">
+      <a href="https://github.com/Jonnasfr" target="_blank" rel="noopener noreferrer">github.com/Jonnasfr</a>
+    </p>
+    <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
+  </footer>
+
+
+  <script src="layout.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
